@@ -1,0 +1,13 @@
+# print"hello"
+print("hello,world!!")
+print(5)
+print("5")
+print(5+2)
+print("82"+"78")
+# print(82+"78")
+# print("82"+78)
+print("82+78")
+print(82+78)
+print("lord jegannath college of engineering and technology")
+print("4/66A")
+print("4/66A,moolachenvilai,paraseri")
