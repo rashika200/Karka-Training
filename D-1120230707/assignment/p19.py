@@ -70,7 +70,8 @@ elif (guess7==number):
     print("you guess it")
     exit()
 
-else:
+    
+else: 
     print("sorry,you didn't guess it in 7 tries. You lose.")
     
 
