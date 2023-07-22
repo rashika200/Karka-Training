@@ -1,17 +1,16 @@
 consumer_data={"consumer name":"P.Rashika",
                "meter_reading":[150,500,1200,1350,2500,3123,4325,6574,8765,8897,9765]}
 
+
 # name=input("consumer name :")
 # reading1=int(input("enter reading1 :"))
 # reading2=int(input("enter reading2 :"))
 # reading3=int(input("enter reading3 :"))
 # reading4=int(input("enter reading4 :"))
 # reading5=int(input("enter reading5 :"))
+# readings=reading1,reading2,reading3,reading4,reading5
 # consumer_data={"consumer name":name,
-#                "meter_reading":[reading1,reading2,reading3,reading4,reading5]}
-# print(consumer_data)
-# data=input("whether it is dict or json?")
-
+#                "meter_readings":readings}
 
 
 # readings=[150,500,1200,1350,2500,3123,4325,6574,8765,8897,9765]
@@ -43,24 +42,33 @@ def calculate_electricity_bill(consumer_data):
             value=units*14
             bill_amount=bill_amount+value
             print(f"month:{month}\nunits_consumed{units}\nbill_amount{value}")
-        
+       
         dict={"month":month,"unit_consumed":units,"bill_amount":bill_amount}
         # print(dict)
         list.append(dict)
-        print(list)
+            # print(list)
     total=0
     total=total+bill_amount
     print("total amount :",total)
 # calculate_electricity_bill(consumer_data)
 
     text=""
+    import json
     name=str(list)
-    print(name)
-    # print(type(stri))
+    method=input("enter the method :")
+    if method=="json"and"Json"and"JSON"and"JsOn"and"JSon":
+        list_json=json.dumps(name)
+        print(list_json)
+    elif method=="dict":
+        list_dict=str(list)
+        print(list_dict)
+
 
     for data in list:
         text=text+(f"month:{data['month']},\nunit_consumed:{data['unit_consumed']},\nbill_amount:{data['bill_amount']}\n")
         file_name="/home/rashika/rashi.txt"
         with open(file_name,"w")as file:
-            file.write(name)
-# calculate_electricity_bill(consumer_data)
+            # file.write(list_json)
+            file.write(list_dict)
+            file.close()
+calculate_electricity_bill(consumer_data)
