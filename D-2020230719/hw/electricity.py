@@ -24,7 +24,7 @@ def calculate_electricity_bill(consumer_data):
         # print(units)
         month=i+1
         if units<100:
-            print(f"month:{month}\nunits_consumed{units}\nbill_amount{bill_amount}")
+            print("nothing to pay")
         if units>100 and units<200:
             value=units*2
             bill_amount=bill_amount+value
@@ -49,14 +49,14 @@ def calculate_electricity_bill(consumer_data):
             # print(list)
     total=0
     total=total+bill_amount
-    print("total amount :",total)
+    # print("total amount :",total)
 # calculate_electricity_bill(consumer_data)
 
     text=""
     import json
     name=str(list)
     method=input("enter the method :")
-    if method=="json"and"Json"and"JSON"and"JsOn"and"JSon":
+    if method=="json"or"Json"or"JSON"or"JsOn"or"JSon":
         list_json=json.dumps(name)
         print(list_json)
     elif method=="dict":
@@ -64,11 +64,11 @@ def calculate_electricity_bill(consumer_data):
         print(list_dict)
 
 
-    for data in list:
-        text=text+(f"month:{data['month']},\nunit_consumed:{data['unit_consumed']},\nbill_amount:{data['bill_amount']}\n")
-        file_name="/home/rashika/rashi.txt"
-        with open(file_name,"w")as file:
-            # file.write(list_json)
-            file.write(list_dict)
-            file.close()
+    # for data in list:
+    #     text=text+(f"month:{data['month']},\nunit_consumed:{data['unit_consumed']},\nbill_amount:{data['bill_amount']}\n")
+    #     file_name="/home/rashika/rashi.txt"
+    #     with open(file_name,"w")as file:
+    #         file.write(list_json)
+    #         file.write(list_dict)
+    #         file.close()
 calculate_electricity_bill(consumer_data)
