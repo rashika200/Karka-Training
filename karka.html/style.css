@@ -1,0 +1,52 @@
+/* *{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: aqua;
+} */
+.box{
+    padding:30px;
+    border:1px solid black;
+    /* background-color: blueviolet; */
+}
+.box1{
+    padding:30px;
+    margin:20px;
+    border:1px solid rgb(12, 147, 140);
+    /* background-color: brown; */
+}
+.box2{
+    padding:30px;
+    margin:20px;
+    border:1px solid rgb(223, 168, 16);
+    /* background-color: rosybrown; */
+}
+.box3{
+    padding:160px;
+    margin:20px;
+    border:1px solid rgb(163, 196, 17);
+    display:inline-block;
+}
+.box4{
+    padding:160px;
+    margin:20px;
+    border:1px solid rgb(3, 112, 45);
+    display: inline-block;
+}
+.box5{
+    padding:160px;
+    margin:20px;
+    border:1px solid rgb(229, 25, 25);
+    display: inline-block;
+}
+.box6{
+    padding:30px;
+    margin:20px;
+    border:1px solid rgb(12, 34, 200);
+}
+.box7{
+    padding:30px;
+    margin:20px;
+    border:1px solid rgb(156, 14, 142);
+}

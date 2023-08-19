@@ -49,3 +49,20 @@ from datetime import timedelta
 # end_date=curr_date+timedelta(days=5)
 end_date=curr_date-timedelta(days=5)
 print(end_date)
+
+
+from datetime import datetime
+dt_obj = datetime.strptime("2021-08-05 15:25:56.792554",
+                           "%Y-%m-%d %H:%M:%S.%f")
+nano_secs = dt_obj.strftime("%f")
+print(nano_secs)
+
+
+from dateutil.parser import parse
+dt = parse('Mon Feb 15 2010')
+print(dt)
+# datetime.datetime(2010, 2, 15, 0, 0)
+print(dt.strftime('%d/%m/%Y'))
+
+
+

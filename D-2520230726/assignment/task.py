@@ -28,7 +28,3 @@ for i in range(n*n,0,-1):
         print("\n")
     print(i,end=" ")
 
-# n=5
-# num=range(1,(n*n)+1)
-# result=reversed(num)
-# print(list(result))

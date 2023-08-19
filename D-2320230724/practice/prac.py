@@ -30,3 +30,15 @@ for i in range(100,200):
         print(i)
 
 
+car=["ford","bmw","volco"]
+car.sort()
+print(car)
+
+
+txt = "Thank you for the music\nWelcome to the jungle"
+
+x = txt.splitlines()
+
+print(x) 
+
+
